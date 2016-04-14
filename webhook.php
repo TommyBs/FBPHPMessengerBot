@@ -6,6 +6,7 @@ $verify_token ='xxxxxxxxxx'; // Your verify token here
 if(isset($_GET['hub_verify_token'])){
 	if($verify_token ==  $_GET['hub_verify_token']){
 		echo $_GET['hub_challenge'];
+		exit();
 	}
 }
 	
